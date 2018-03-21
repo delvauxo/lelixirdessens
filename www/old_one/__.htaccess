@@ -1,0 +1,25 @@
+Redirect /menu.html http://lelixirdessens.com/menu/
+Redirect /index http://lelixirdessens.com/
+Redirect /gallerie http://lelixirdessens.com/galerie/
+Redirect /contacts http://lelixirdessens.com/contact
+Redirect /menu_vins.pdf http://lelixirdessens.com/boisson.pdf
+Redirect /menu_norm.pdf http://lelixirdessens.com/carte.pdf
+Redirect /menu_bar.pdf http://lelixirdessens.com/boisson.pdf
+Redirect /boisson.pdf http://lelixirdessens.com/carte.pdf
+Redirect /news http://lelixirdessens.com/post/
+RewriteEngine on
+# 
+# # RewriteCond %{REQUEST_FILENAME} =-f
+# 
+# # RewriteRule ^(.*)\.php$ $1.html [NC,L]
+# # 
+# # RewriteRule ^(.*)\.html$  $1.php [NC,L]
+# # 
+# # RewriteRule ^(.*)$  $1.php [NC,L]
+# 
+# RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+# RewriteRule ^(.*)\.html$  $1.php [L]
+
+RewriteRule ^(.*)$  $1.php [L]

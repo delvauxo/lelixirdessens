@@ -1,0 +1,642 @@
+-- MySQL dump 10.13  Distrib 5.1.66, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: microwebnet
+-- ------------------------------------------------------
+-- Server version	5.1.66-0+squeeze1-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `abouts`
+--
+
+DROP TABLE IF EXISTS `abouts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `abouts` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `online` int(11) DEFAULT NULL,
+  `description` text CHARACTER SET utf8,
+  `description_nl` varchar(255) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `abouts`
+--
+
+LOCK TABLES `abouts` WRITE;
+/*!40000 ALTER TABLE `abouts` DISABLE KEYS */;
+INSERT INTO `abouts` VALUES (1,1,'<p><strong>&nbsp;</strong></p>\r\n<p><strong>Un site web professionnel pour un r&eacute;f&eacute;rencement optimal<br /></strong><strong>&nbsp;</strong></p>\r\n<p>Vous &ecirc;tes pleinement conscient qu&rsquo;Internet joue aujourd&rsquo;hui un r&ocirc;le essentiel dans la visibilit&eacute; et la notori&eacute;t&eacute; d&rsquo;une entreprise ? Vous venez de fonder votre propre soci&eacute;t&eacute; et d&eacute;sirez cr&eacute;er un site web de qualit&eacute; destin&eacute; &agrave; mettre vos activit&eacute;s en valeur ? Agence sp&eacute;cialis&eacute;e dans la cr&eacute;ation et la mise &agrave; disposition de sites Internet destin&eacute;s aux ind&eacute;pendants, aux start-ups et aux PME, Micro Web vous propose la solution cl&eacute; en main dont vous r&ecirc;vez !</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Design, qualit&eacute; et ergonomie&nbsp;: un site web pour chaque entreprise<br /><br /></strong></p>\r\n<p>Nous prenons en charge votre site web de A &agrave; Z&nbsp;! Concr&egrave;tement&nbsp;? Comptez sur nous pour mener de main de ma&icirc;tre&nbsp;la cr&eacute;ation du site, la configuration de l&rsquo;URL et de l&rsquo;h&eacute;bergement ainsi que l&rsquo;installation de notre CMS et son param&eacute;trage. Nous assurons, &eacute;galement, la r&eacute;daction de vos textes dans le respect des mots-cl&eacute;s. Laissez de notre &eacute;quipe jongler avec les mots et prodiguer &agrave; votre entreprise des textes plus percutants les uns que les autres&nbsp;! Et parce qu&rsquo;un site doit &eacute;galement attirer l&rsquo;attention d&egrave;s le premier coup d&rsquo;&oelig;il, nous nous chargeons de la conception d&rsquo;un site web aux couleurs de votre entreprise. Simple, pratique et rentable&nbsp;!</p>\r\n<p>Vous souhaitez b&eacute;n&eacute;ficier de notre savoir-faire et de notre expertise en mati&egrave;re de cr&eacute;ation de sites web ? Faites appel &agrave; notre &eacute;quipe de sp&eacute;cialistes sans plus attendre&nbsp;!</p>','<p>Microweb is een agentschap dat gespecialiseerd is in het cre&euml;ren en leveren van websites voor onafhankelijke startups en kleine en middelgrote ondernemingen.</p>\r\n<p>Onze web agency ondersteunt alle fasen van het proces, het cre&euml;ren van uw we','2013-06-25');
+/*!40000 ALTER TABLE `abouts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aides`
+--
+
+DROP TABLE IF EXISTS `aides`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aides` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_id` varchar(11) DEFAULT NULL,
+  `email` varchar(40) NOT NULL,
+  `mobile` varchar(255) DEFAULT NULL,
+  `nom` varchar(40) NOT NULL,
+  `prenom` varchar(40) NOT NULL,
+  `message` text NOT NULL,
+  `date_envoi` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=130 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aides`
+--
+
+LOCK TABLES `aides` WRITE;
+/*!40000 ALTER TABLE `aides` DISABLE KEYS */;
+INSERT INTO `aides` VALUES (1,NULL,'delvauxo@skynet.be',NULL,'Delvaux','Olivier','C\'est l\'heure d\'aller mangé','2012-07-06'),(2,NULL,'delvauxo@skynet.be',NULL,'Delvaux','Olivier','C\'est l\'heure d\'aller mangé','2012-07-06'),(3,NULL,'delvauxo@skynet.be',NULL,'Delvauxo','Olivier','Thx to U !','2012-07-11'),(4,NULL,'vds.p@gmail.com',NULL,'Vanderstappen ','Patrick','test','2012-07-18'),(122,'MW_001','artiste@gmail.com',NULL,'Delvaux','Olivier','Test','2013-03-26'),(123,'DO_001','delvache@gmail.com','0487610422','Delvache','Olive','Testtttttt','2013-03-26'),(124,'BP_001','bprost@gmail.com','0486352699','Prost','Benjamin','tesst','2013-03-26'),(125,'ES_001','e.st@gmail.com','0487352847','Elodie','Stievenart','Merci de bien vouloir me donner votre numÃ©ro d\'entreprise.','2013-03-26'),(126,'ED_001','eliott@gmail.com','0475000000','Delvaux','Eliott','test','2013-03-26'),(127,'SC_001','steph_2037@hotmail.com','0473624364','Colucci','StÃ©phanie','tessst','2013-03-26'),(128,'JD_001','delvaux.j@gmail.com','0487321681','Delvaux','JÃ©rÃ©my','test','2013-03-26'),(129,'DV_001','delvache@gmail.com','0487610422','Delvache','Olivette','No question, thx','2013-03-31');
+/*!40000 ALTER TABLE `aides` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `analytics`
+--
+
+DROP TABLE IF EXISTS `analytics`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `analytics` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(255) COLLATE latin1_german1_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE latin1_german1_ci DEFAULT NULL,
+  `lien_fr` varchar(255) COLLATE latin1_german1_ci DEFAULT NULL,
+  `lien_nl` varchar(255) COLLATE latin1_german1_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `analytics`
+--
+
+LOCK TABLES `analytics` WRITE;
+/*!40000 ALTER TABLE `analytics` DISABLE KEYS */;
+INSERT INTO `analytics` VALUES (1,'delvauxo@skynet.be','9sqmx7r6','https://accounts.google.com/ServiceLogin?service=analytics&passive=true&nui=1&hl=fr&continue=https%3A%2F%2Fwww.google.com%2Fanalytics%2Fweb%2F%3Fhl%3Dfr&followup=https%3A%2F%2Fwww.google.com%2Fanalytics%2Fweb%2F%3Fhl%3Dfr','google.nl');
+/*!40000 ALTER TABLE `analytics` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `categories`
+--
+
+DROP TABLE IF EXISTS `categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `slug` varchar(255) NOT NULL,
+  `category` varchar(255) NOT NULL DEFAULT 'oui',
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `categories`
+--
+
+LOCK TABLES `categories` WRITE;
+/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+INSERT INTO `categories` VALUES (1,'Aucune','aucune','non',NULL),(12,'Design','design','oui',NULL),(13,'Developpement','developpement','oui',NULL);
+/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `citations`
+--
+
+DROP TABLE IF EXISTS `citations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `citations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `text` varchar(1000) CHARACTER SET utf8 DEFAULT NULL,
+  `text_nl` varchar(255) NOT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `citations`
+--
+
+LOCK TABLES `citations` WRITE;
+/*!40000 ALTER TABLE `citations` DISABLE KEYS */;
+INSERT INTO `citations` VALUES (1,'<p style=\\\"text-align: center;\\\"><strong><span style=\\\"color: #333300;\\\">\\\"</span></strong>&nbsp;<em><span style=\\\"color: #888888;\\\">Morbi non neque id dui pretium pulvinar. Aenean nisl enim, vehicula quis viverra eget, semper eu odio. Nam tincidunt congue purus, mattis consectetur orci porta nec. Pellentesque et nisl nunc, eget pulvinar dolor.</span></em>&nbsp;<strong><span style=\\\"color: #333300;\\\">\\\"</span></strong></p>\r\n<p style=\\\"text-align: right;\\\"><span style=\\\"color: #333300;\\\">&nbsp;</span></p>\r\n<p style=\\\"text-align: right;\\\"><strong><span style=\\\"color: #333300;\\\">Laurent <strong><span style=\\\"color: #333300;\\\">Dommergues - DLAvocats</span></strong> </span></strong></p>','<p><span>Morbi non neque id dui pretium pulvinar. Aenean nisl enim, vehicula quis viverra eget, semper eu odio. Nam tincidunt congue purus, mattis consectetur orci porta nec.&nbsp;</span><span>Pellentesque et nisl nunc, eget pulvinar dolor.</span></p>','2013-05-27');
+/*!40000 ALTER TABLE `citations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `configs`
+--
+
+DROP TABLE IF EXISTS `configs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `configs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `value` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name_UNIQUE` (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `configs`
+--
+
+LOCK TABLES `configs` WRITE;
+/*!40000 ALTER TABLE `configs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `configs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contact_intros`
+--
+
+DROP TABLE IF EXISTS `contact_intros`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `contact_intros` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `texte_fr` text COLLATE latin1_general_ci,
+  `texte_nl` text COLLATE latin1_general_ci,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contact_intros`
+--
+
+LOCK TABLES `contact_intros` WRITE;
+/*!40000 ALTER TABLE `contact_intros` DISABLE KEYS */;
+INSERT INTO `contact_intros` VALUES (1,'<p>Pour plus d&rsquo;informations concernant la cr&eacute;ation de sites web pas chers, efficaces et rentables, prenez contact avec notre &eacute;quipe du lundi au vendredi de 10&nbsp;h &agrave; 20&nbsp;h. La fin de semaine bat son plein et vous avez une question urgente&nbsp;concernant votre site Internet ? Nous sommes aussi &agrave; votre disposition les week-ends et les jours f&eacute;ri&eacute;s, de 12&nbsp;h &agrave; 18&nbsp;h. Contactez-nous au 02/000.00.00 ou remplissez le formulaire ci-dessous.</p>','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus harum praesentium inventore facilis velit sequi possimus similique eius ad magnam ducimus laudantium. Illum praesentium numquam cumque itaque quis blanditiis et!','2013-05-26');
+/*!40000 ALTER TABLE `contact_intros` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contacts`
+--
+
+DROP TABLE IF EXISTS `contacts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `contacts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_id` varchar(11) DEFAULT NULL,
+  `eadress` varchar(40) NOT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `nom` varchar(40) NOT NULL,
+  `prenom` varchar(40) NOT NULL,
+  `message` text NOT NULL,
+  `date_envoi` date DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=128 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contacts`
+--
+
+LOCK TABLES `contacts` WRITE;
+/*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
+INSERT INTO `contacts` VALUES (118,NULL,'delvauxo@skynet.be',NULL,'Delvaux','Olivier','C\'est l\'heure d\'aller mangé','2012-07-06',NULL),(119,NULL,'delvauxo@skynet.be',NULL,'Delvaux','Olivier','C\'est l\'heure d\'aller mangé','2012-07-06',NULL),(120,NULL,'delvauxo@skynet.be',NULL,'Delvauxo','Olivier','Thx to U !','2012-07-11',NULL),(121,NULL,'vds.p@gmail.com',NULL,'Vanderstappen ','Patrick','test','2012-07-18',NULL),(122,'OD_001','d@gmail.com','0487610422','Delvache','Oliver','test','2013-03-26',NULL),(123,'OD_001','delvauxo@skynet.be','0487610422','Delvaux','Olivier','This is a test to know where this email will be send...','2013-04-18',NULL),(124,'MW_001','delvauxo@skynet.be','0487610422','Delvaux','Olivier','This is a fcking test...','2013-05-26',NULL),(125,'MW_002','bprost@dot.com','0457 62 52 54','Prost','Benja','MessageThis is a fake','2013-06-05',NULL),(126,'MW_001','delvixou@pixou.com','05 984 54 87','Delvaux','Olivier','This is a fake message :-D','2013-06-05',NULL),(127,'MW_003','delvauxo@skynet.be','0487610423','Olivier','Delvaux','This is a test message...','2013-06-05',NULL);
+/*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `crops`
+--
+
+DROP TABLE IF EXISTS `crops`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `crops` (
+  `size` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `id` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `crops`
+--
+
+LOCK TABLES `crops` WRITE;
+/*!40000 ALTER TABLE `crops` DISABLE KEYS */;
+/*!40000 ALTER TABLE `crops` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `customers`
+--
+
+DROP TABLE IF EXISTS `customers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `customers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `online` int(11) NOT NULL DEFAULT '1',
+  `created` date DEFAULT NULL,
+  `societe` varchar(255) DEFAULT NULL,
+  `nom` varchar(255) DEFAULT NULL,
+  `prenom` varchar(255) DEFAULT NULL,
+  `rue` varchar(255) DEFAULT NULL,
+  `codep` varchar(255) DEFAULT NULL,
+  `pays` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `fixe` int(255) DEFAULT NULL,
+  `mobile` int(255) DEFAULT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `secteur` varchar(255) DEFAULT NULL,
+  `tracking` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `customers`
+--
+
+LOCK TABLES `customers` WRITE;
+/*!40000 ALTER TABLE `customers` DISABLE KEYS */;
+INSERT INTO `customers` VALUES (1,1,'2013-03-19','Micro-Web','Delvaux','Olivier','Diesbeekstraat 59','1654 - Huizingen','Belgique','olivier@micro-web.be',23800497,487610422,'www.micro-web.be','Informatique - Websites','dunno wat it is !!!'),(2,1,'2013-03-22','Van Lathem','Van Lathem','Timothy','Beukenlaan 5','Dworp','Belgique','info@tuinarchitectuur-vanlathem.be',0,2147483647,'http://www.facebook.com/TuinarchitectuurVanLathem?filter=1','Jardinage','Chobar la carte de visite dans une sandwicherie...'),(12,1,'2013-04-08','Buzon Pedestal International S.A.','Buzon','Laurent','Prolongement de la rue de l\\\'Abbaye, 134','4040','Belgique','laurent.buzon@buzon-world.com',42483983,0,'www.buzon-world.com','Manufacture','Client Produweb'),(13,1,'2013-04-08','M.Klinkenberg & Fils S.A.','','','Rue du Fourneau 43b','4030','Belgique','info@klinkenberg.be',43660031,0,'http://www.klinkenberg.be','Energie','Client Produweb'),(14,1,'2013-04-08','Belgaufra','','','Av. Zenobe Gramme, 20','1300','Belgique','',22170868,0,'www.belgaufra.com','Food','Client Produweb'),(15,1,'2013-04-08','YesWeCan sprl','','','Leuvensesteenweg 510 Unit B3.0','1930','Belgique','',27201515,0,'www.ywc.be','Distribution','Client Produweb (prestashop)'),(16,1,'2013-04-08','Fine Wine Gallery','','','','','Belgique','info@fine-wine-gallery.com',24206409,0,'www.fine-wine-gallery.com','Beverage','Client Produweb'),(17,1,'2013-04-08','Toolbox by Outilac','','','Rue J. Wettink 31','4101','Belgique','',42347777,0,'https://www.centre-outils.fr','Distribution','Client Produweb'),(25,1,'2013-04-29','APL','Maertens','Frederic','Rue de la vignette 37','1160','Belgique','info@apl.be',27621671,0,'www.apl.be','Signalitique','Oliver a boss&eacute; avec eux ! Connais bien le personnel ! Ils veulent un multilingue');
+/*!40000 ALTER TABLE `customers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `h_aproposs`
+--
+
+DROP TABLE IF EXISTS `h_aproposs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `h_aproposs` (
+  `id` int(11) NOT NULL,
+  `titre` varchar(255) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
+  `texte` varchar(255) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `h_aproposs`
+--
+
+LOCK TABLES `h_aproposs` WRITE;
+/*!40000 ALTER TABLE `h_aproposs` DISABLE KEYS */;
+INSERT INTO `h_aproposs` VALUES (1,'A Propos','<p>&nbsp;Vous souhaitez b&eacute;n&eacute;ficier des comp&eacute;tences de nos sp&eacute;cialistes pour la cr&eacute;ation de votre site web ? MicroWeb et son &eacute;quipe est &agrave; votre disposition.&nbsp;</p>','http://www.micro-web.be/fr/propos','2013-04-23');
+/*!40000 ALTER TABLE `h_aproposs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `h_contacts`
+--
+
+DROP TABLE IF EXISTS `h_contacts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `h_contacts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titre` varchar(255) DEFAULT NULL,
+  `texte` varchar(255) DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `h_contacts`
+--
+
+LOCK TABLES `h_contacts` WRITE;
+/*!40000 ALTER TABLE `h_contacts` DISABLE KEYS */;
+INSERT INTO `h_contacts` VALUES (1,'Contact','<p>Nous sommes joignables du lundi au vendredi de 10h a 20h et de 12h a 18h les weekends et jours f&eacute;ri&eacute;s</p>','http://www.micro-web.be/fr/contact','2013-05-01');
+/*!40000 ALTER TABLE `h_contacts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `medias`
+--
+
+DROP TABLE IF EXISTS `medias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `medias` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `file` varchar(255) DEFAULT NULL,
+  `name` varchar(255) NOT NULL,
+  `post_id` int(11) DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_medias_posts` (`post_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=77 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `medias`
+--
+
+LOCK TABLES `medias` WRITE;
+/*!40000 ALTER TABLE `medias` DISABLE KEYS */;
+INSERT INTO `medias` VALUES (10,'2011-09/if-ifttt-com-then-1066.jpg','',9,'img'),(7,'2011-09/1password-votre-coffre-fort-virtuel-1070.jpg','',19,'img'),(6,'2011-09/grafikart-32.png','',20,'img'),(14,'2011-10/user&psw_ovh.jpg','',22,'img'),(11,'2011-10/MC910221716[1].jpg','',17,'img'),(12,'2011-10/login.png','',9,'img'),(13,'2011-10/bouton_ensavoirplus.png','',17,'img'),(15,'2011-10/Maxim-logo-240-wt.png','',22,'img'),(16,'2011-10/login.png','',19,'img'),(17,'24/facade.jpg','',24,'img'),(19,'24/cuisine.jpg','',24,'img'),(20,'24/jardin.jpg','',24,'img'),(21,'24/s_a_manger.jpg','',24,'img'),(22,'24/s_d_bain.jpg','',24,'img'),(29,'25/376_48301525545_503530545_2050454_3878_n.jpg','',25,'img'),(30,'25/DSC00612.JPG','',25,'img'),(40,'27/180943_10150093233718348_721778347_6175235_7404601_n.jpg','',27,'img'),(41,'27/185663_10150093235008348_721778347_6175263_5769247_n.jpg','',27,'img'),(35,'27/180425_10150093241978348_721778347_6175419_4357178_n.jpg','',27,'img'),(36,'27/183665_10150093235108348_721778347_6175264_7182832_n.jpg','',27,'img'),(37,'27/180650_10150093233618348_721778347_6175233_4971235_n.jpg','',27,'img'),(38,'27/183122_10150093241488348_721778347_6175409_2839413_n.jpg','',27,'img'),(39,'27/185797_10150093225793348_721778347_6175156_5127421_n.jpg','',27,'img'),(42,'27/183918_10150093230658348_1186477_n.jpg','',27,'img'),(43,'27/185709_10150093226593348_721778347_6175168_5666128_n.jpg','',27,'img'),(44,'27/62797_1419248087254_1414206708_30996044_140044_n.jpg','',27,'img'),(64,'30/33653_154510347922221_100000897705772_272217_3527338_n.jpg','',30,'img'),(57,'26/380610_10151508329745475_524060474_24151644_609009604_n.jpg','Pop',26,'img'),(52,'32/ruler.jpg','',32,'img'),(63,'30/59644_154510594588863_100000897705772_272227_3261580_n.jpg','',30,'img'),(59,'31/oli_0001.jpg','',31,'img'),(60,'28/33653_154510347922221_100000897705772_272217_3527338_n.jpg','',28,'img'),(61,'31/IMG00039-20110809-1414.jpg','',31,'img'),(67,'90/exemple-signature-mail.jpg','',90,'img'),(72,'1/placekitten.jpeg','',1,'img'),(73,'100/placekitten.jpeg','',100,'img'),(74,'100/dota_tiny_02.png','',100,'img'),(75,'95/001_bague_montre_002.jpg','',95,'img'),(76,'95/001_bague_montre_003.png','',95,'img');
+/*!40000 ALTER TABLE `medias` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `parametres`
+--
+
+DROP TABLE IF EXISTS `parametres`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `parametres` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `created` date DEFAULT NULL,
+  `page` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `online` int(11) NOT NULL DEFAULT '1',
+  `title_for_layout_fr` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `title_for_layout_nl` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `description_for_layout_fr` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `description_for_layout_nl` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `parametres`
+--
+
+LOCK TABLES `parametres` WRITE;
+/*!40000 ALTER TABLE `parametres` DISABLE KEYS */;
+INSERT INTO `parametres` VALUES (1,'2013-03-27','Home',1,'Micro-Web - Home','Micro-Web - Home','<p>Fr MicroWeb est une agence sp&eacute;cialis&eacute;e dans la cr&eacute;ation et la mise &agrave; disposition de sites internet destin&eacute;s aux ind&eacute;pendants, startups et PME.Notre agence web prend en charge toutes les &eacute;tapes du process','<p>NL Microweb is een agentschap dat gespecialiseerd is in het cre&euml;ren en leveren van websites voor onafhankelijke startups en webbureau PME.Notre ondersteunt alle fasen van het proces, het cre&euml;ren van uw website, de URL van de configuratie en a','2013-05-15'),(2,'2013-03-27','Actualités',1,'Micro-Web - Actualités','Micro-Web - Nieuws','<p>Vous trouverez toute l\\\'actualit&eacute; du web autour de MicroWeb</p>','<p>NL&nbsp; Vous trouverez toute l\\\'actualit&eacute; du web autour de MicroWeb</p>','2013-05-15'),(3,'2013-03-27','Services',1,'Micro-Web - Services','Micro-Web - Diensten','','',NULL),(4,'2013-03-27','Valeurs ajoutées',1,'Micro-Web - Valeurs ajoutées','Micro-Web - Toegevoegde Waarden','','',NULL),(5,'2013-03-27','Portfolio',1,'Micro-Web - Portfolio','Micro-Web - Portfolio','','','2013-05-15'),(7,'2013-03-27','A propos',1,'Micro-Web - A propos','Micro-Web - Over ons','','',NULL),(8,'2013-03-27','Contact',1,'Micro-Web - Contact','Micro-Web - Contact','<p>FR</p>','<p>NL</p>','2013-05-15');
+/*!40000 ALTER TABLE `parametres` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `portfolios`
+--
+
+DROP TABLE IF EXISTS `portfolios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `portfolios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `online` int(11) NOT NULL DEFAULT '1',
+  `created` date DEFAULT NULL,
+  `file` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `titre_fr` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `titre_nl` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `texte_fr` varchar(1000) COLLATE latin1_general_ci DEFAULT NULL,
+  `texte_nl` varchar(1000) COLLATE latin1_general_ci DEFAULT NULL,
+  `caption_fr` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `caption_nl` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `portfolios`
+--
+
+LOCK TABLES `portfolios` WRITE;
+/*!40000 ALTER TABLE `portfolios` DISABLE KEYS */;
+INSERT INTO `portfolios` VALUES (1,1,'2013-03-25','1_home_tmb.png','DLAvocats','DLAvocats','<p>Droit</p>','<p>DL Avocats est un cabinet ind&eacute;pendant fond&eacute; &agrave; Madrid en 2009, sp&eacute;cialis&eacute; en fiscalit&eacute; indirecte (TVA). Services de conseil en TVA, gestion des contentieux TVA, compliance TVA, repr&eacute;sentation fiscale et suivi des proc&eacute;dures de remboursement de TVA, &agrave; l&rsquo;occasion de toute op&eacute;ration r&eacute;alis&eacute;e en Espagne.</p>','La légende francaise','la légende néerlandaise','2013-05-27'),(2,1,'2013-03-25','2_nns_home.png','NNs Invest','NNs Invest','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat rerum assumenda nemo fugit veritatis itaque consequatur commodi consequuntur quas facere in sequi quos cum illo. Vitae quos earum repellat.</p>','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat rerum assumenda nemo fugit veritatis itaque consequatur commodi consequuntur quas facere in sequi quos cum illo. Vitae quos earum repellat.</p>','Légende francaise','légende néerlandaise','2013-04-10'),(3,1,'2013-03-25','3_vav_home.png','Van&Van','Van&Van','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat rerum assumenda nemo fugit veritatis itaque consequatur commodi consequuntur quas facere in sequi quos cum illo. Vitae quos earum repellat.</p>','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat rerum assumenda nemo fugit veritatis itaque consequatur commodi consequuntur quas facere in sequi quos cum illo. Vitae quos earum repellat.</p>','Légende francaise','Légende néerlandaise','2013-04-10'),(4,1,'2013-03-25','4_bar77_home.png','Bar 77','Bar 77','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat rerum assumenda nemo fugit veritatis itaque consequatur commodi consequuntur quas facere in sequi quos cum illo. Vitae quos earum repellat.</p>','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat rerum assumenda nemo fugit veritatis itaque consequatur commodi consequuntur quas facere in sequi quos cum illo. Vitae quos earum repellat.</p>','Légende francaise','Légende néerlandaise','2013-04-10');
+/*!40000 ALTER TABLE `portfolios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `posts`
+--
+
+DROP TABLE IF EXISTS `posts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `naam` varchar(255) DEFAULT NULL,
+  `file` varchar(255) NOT NULL,
+  `dossier` varchar(255) NOT NULL,
+  `content` text,
+  `content_nl` text,
+  `created` date DEFAULT NULL,
+  `online` int(11) DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  `slug` varchar(255) DEFAULT NULL,
+  `slug_nl` varchar(255) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `category_id` int(1) NOT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_posts_users1` (`user_id`),
+  KEY `category_id` (`category_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=107 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `posts`
+--
+
+LOCK TABLES `posts` WRITE;
+/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
+INSERT INTO `posts` VALUES (98,'Un miroir pour les geeks','Artiekel 4','98/cover/1368466323.jpg','','<p>Miroir high-tech, ultra connect&eacute; et divertissant, le Cybertecture ne se contente pas de vous dire qui est la plus belle, mais offre toute une panoplie de services d&rsquo;information ou ludiques, personnalis&eacute;s en fonction de l&rsquo;utilisateur du miroir. Il affiche la m&eacute;t&eacute;o, nos derniers messages et notifications des r&eacute;seaux sociaux, int&egrave;gre un &eacute;cran de t&eacute;l&eacute;vision, un p&egrave;se-personne (avec une application ou l&rsquo;on peut suivre l&rsquo;&eacute;volution de son poids), des exercices de sport, et des lumi&egrave;res pour mieux se maquiller. Rien que &ccedil;a, dans un seul et m&ecirc;me objet de d&eacute;coration discret dans la salle de bain. Le futur est bien arriv&eacute;.</p>\r\n<p>&nbsp;</p>\r\n<p><iframe style=\\\"display: block; margin-left: auto; margin-right: auto;\\\" src=\\\"http://www.youtube.com/embed/TP64GolT-UU\\\" frameborder=\\\"0\\\" width=\\\"560\\\" height=\\\"315\\\"></iframe>&nbsp;</p>','<p>NL&nbsp;Miroir high-tech, ultra connect&eacute; et divertissant, le Cybertecture ne se contente pas de vous dire qui est la plus belle, mais offre toute une panoplie de services d&rsquo;information ou ludiques, personnalis&eacute;s en fonction de l&rsquo;utilisateur du miroir. Il affiche la m&eacute;t&eacute;o, nos derniers messages et notifications des r&eacute;seaux sociaux, int&egrave;gre un &eacute;cran de t&eacute;l&eacute;vision, un p&egrave;se-personne (avec une application ou l&rsquo;on peut suivre l&rsquo;&eacute;volution de son poids), des exercices de sport, et des lumi&egrave;res pour mieux se maquiller. Rien que &ccedil;a, dans un seul et m&ecirc;me objet de d&eacute;coration discret dans la salle de bain. Le futur est bien arriv&eacute;.</p>','2013-03-11',1,'post','un-miroir-pour-les-geeks','artiekel-4',NULL,13,'2013-05-16'),(95,'Bague Montre','Bague Montre NL','95/cover/1368451576.png','','<p style=\\\"text-align: center;\\\">Cyber, un utilisateur de CGSociety, a ​​r&eacute;cemment con&ccedil;u une bague montre. Cette bague montre ou montre bague, &agrave; vous de choisir, est un anneau m&eacute;canique en acier inoxydable qui affiche l&rsquo;heure. Il se compose de trois anneaux qui tournent s&eacute;par&eacute;ment, affichant l&rsquo;heure, les minutes et les secondes. Un indicateur assure que vous avez mis l&rsquo;anneau du bon cot&eacute;, et l&rsquo;heure qu&rsquo;il est est affich&eacute;e en surbrillance. Non seulement ce petit gadget est fonctionnel, mais il est aussi tr&egrave;s &eacute;l&eacute;gant.</p>','<p>Cyber, un utilisateur de CGSociety, a ​​r&eacute;cemment con&ccedil;u une bague montre. Cette bague montre ou montre bague, &agrave; vous de choisir, est un anneau m&eacute;canique en acier inoxydable qui affiche l&rsquo;heure. Il se compose de trois anneaux qui tournent s&eacute;par&eacute;ment, affichant l&rsquo;heure, les minutes et les secondes. Un indicateur assure que vous avez mis l&rsquo;anneau du bon cot&eacute;, et l&rsquo;heure qu&rsquo;il est est affich&eacute;e en surbrillance. Non seulement ce petit gadget est fonctionnel, mais il est aussi tr&egrave;s &eacute;l&eacute;gant.</p>','2013-03-08',1,'post','article-1','artiekel-1',NULL,12,'2013-05-23'),(96,'FingerTouch Detection','Artiekel 2','96/cover/1368464256.jpg','','<p style=\\\"text-align: justify;\\\">Les chercheurs japonais de Fujitsu ont mis sur point un concept baptis&eacute; &laquo; Fingerlink Interaction System &raquo;, projet qui est capable de transformer n&rsquo;importe quel support papier en lui ajoutant les outils num&eacute;riques que l&rsquo;on retrouve dans un &eacute;cran tactile. Munis d&rsquo;un projecteur et d&rsquo;une cam&eacute;ra, cet ordinateur scanne en temps r&eacute;el et en 3D les supports imprim&eacute;s qu&rsquo;on lui pr&eacute;sente. Il calcule &eacute;galement la position des doigts de l&rsquo;utilisateur permettant ainsi une capacit&eacute; d&rsquo;habitude r&eacute;serv&eacute;e au num&eacute;rique : partager du contenu sur les r&eacute;seaux sociaux, extraire des textes et images, rendre des liens cliquables, rechercher des d&eacute;finitions ou afficher plus d&rsquo;information,&hellip; Il semblerait que ce concept pourrait r&eacute;concilier papier et num&eacute;rique</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><iframe style=\\\"display: block; margin-left: auto; margin-right: auto;\\\" src=\\\"http://www.youtube.com/embed/I2l0qklSzks\\\" frameborder=\\\"0\\\" width=\\\"560\\\" height=\\\"315\\\"></iframe></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>','<p>Les chercheurs japonais de Fujitsu ont mis sur point un concept baptis&eacute; &laquo; Fingerlink Interaction System &raquo;, projet qui est capable de transformer n&rsquo;importe quel support papier en lui ajoutant les outils num&eacute;riques que l&rsquo;on retrouve dans un &eacute;cran tactile. Munis d&rsquo;un projecteur et d&rsquo;une cam&eacute;ra, cet ordinateur scanne en temps r&eacute;el et en 3D les supports imprim&eacute;s qu&rsquo;on lui pr&eacute;sente. Il calcule &eacute;galement la position des doigts de l&rsquo;utilisateur permettant ainsi une capacit&eacute; d&rsquo;habitude r&eacute;serv&eacute;e au num&eacute;rique : partager du contenu sur les r&eacute;seaux sociaux, extraire des textes et images, rendre des liens cliquables, rechercher des d&eacute;finitions ou afficher plus d&rsquo;information,&hellip; Il semblerait que ce concept pourrait r&eacute;concilier papier et num&eacute;rique. NL</p>','2013-03-09',1,'post','fingertouch-detection','artiekel-2',NULL,13,'2013-05-23'),(97,'Handpresso Pour les Addicts au café','Artiekel 3','97/cover/1368465124.jpg','','<p>La Handpresso Wild Hybrid Coffee machine est le must-have des addicts au caf&eacute; !<br />Cette machine fonctionne un peu comme la pompe de votre bicyclette, elle engendre 16 bars de pression simplement en pompant. Il faut juste ajouter de l&rsquo;eau chaude, votre caf&eacute; pr&eacute;f&eacute;r&eacute; et laisser s&rsquo;op&eacute;rer la magie! Vous pouvez utiliser des dosettes en pla&ccedil;ant l&rsquo;adaptateur ESE ou du caf&eacute; moulu pour espresso suivant vos pr&eacute;f&eacute;rences. Bien que cette machine soit extr&ecirc;mement l&eacute;g&egrave;re avec son poids plume de 480g et facile &agrave; utiliser, la qualit&eacute; est toujours au rendez-vous et a &eacute;t&eacute; con&ccedil;ue pour durer. Facile &agrave; ranger et &agrave; transporter.Simple, l&eacute;g&egrave;re, &eacute;l&eacute;gante et compacte, la Handpresso Wild hybrid vous suit au bureau, en vacances, en week-end, en balade, en voyage. Elle fonctionne sans piles ni &eacute;lectricit&eacute; et plaira &agrave; ceux qui se soucient de l&rsquo;environnement.C&rsquo;est tout ce qu&rsquo;il nous faut! Vous pouvez retrouver votre machine &agrave; espresso portable sur leur site web.</p>\r\n<p>&nbsp;</p>\r\n<p><iframe style=\\\"display: block; margin-left: auto; margin-right: auto;\\\" src=\\\"http://www.youtube.com/embed/u1fGFL6-Rok\\\" frameborder=\\\"0\\\" width=\\\"560\\\" height=\\\"315\\\"></iframe></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>','<p>NL&nbsp;La Handpresso Wild Hybrid Coffee machine est le must-have des addicts au caf&eacute; !<br /> Cette machine fonctionne un peu comme la pompe de votre bicyclette, elle engendre 16 bars de pression simplement en pompant. Il faut juste ajouter de l&rsquo;eau chaude, votre caf&eacute; pr&eacute;f&eacute;r&eacute; et laisser s&rsquo;op&eacute;rer la magie! Vous pouvez utiliser des dosettes en pla&ccedil;ant l&rsquo;adaptateur ESE ou du caf&eacute; moulu pour espresso suivant vos pr&eacute;f&eacute;rences. Bien que cette machine soit extr&ecirc;mement l&eacute;g&egrave;re avec son poids plume de 480g et facile &agrave; utiliser, la qualit&eacute; est toujours au rendez-vous et a &eacute;t&eacute; con&ccedil;ue pour durer. Facile &agrave; ranger et &agrave; transporter.Simple, l&eacute;g&egrave;re, &eacute;l&eacute;gante et compacte, la Handpresso Wild hybrid vous suit au bureau, en vacances, en week-end, en balade, en voyage. Elle fonctionne sans piles ni &eacute;lectricit&eacute; et plaira &agrave; ceux qui se soucient de l&rsquo;environnement.C&rsquo;est tout ce qu&rsquo;il nous faut! Vous pouvez retrouver votre machine &agrave; espresso portable sur leur site web.</p>','2013-03-10',1,'post','handpresso-pour-les-addicts-au-cafe','artiekel-3',NULL,1,'2013-05-13'),(105,'Un petit canard au bord de l’eau…','NL Un petit canard au bord de l’eau…','105/cover/1368704645.jpg','','<p>Pr&eacute;sent en 2009 &agrave; Hasselt, le canard g&eacute;ant fait son retour dans les eaux d&rsquo;Hong Kong. Cr&eacute;&eacute; par un artiste n&eacute;erlandais, cette &laquo; petite &raquo; &oelig;uvre d&rsquo;art est connue sous le nom de Rubber Duck. L&rsquo;animal en plastique de Florentijn Hofman a donc gentiment barbot&eacute; le 2 mai dernier dans un port hongkongais, pendant que la foule &eacute;tait en admiration face &agrave; cette nostalgie de l&rsquo;enfance.<br /><br />Alors pourquoi ce canard gonflable ? Le cr&eacute;ateur Florentijn explique &laquo; Nous habitons sur une m&ecirc;me plan&egrave;te et les eaux de la Terre sont comme une m&ecirc;me baignoire. C&rsquo;est notre baignoire. Nous devons nous y baigner et nous devons nous assurer qu&rsquo;elle reste propre. Nous devons en prendre soin. &raquo; Une bonne mani&egrave;re de nous faire r&eacute;fl&eacute;chir, non ?<br /><br />Rubber Duck qui avoisine une hauteur comparable &agrave; un immeuble de six &eacute;tages n&rsquo;en est pas &agrave; sa premi&egrave;re sortie. Apr&egrave;s la Belgique, la France, les Pays-Bas et le Br&eacute;sil, les australiens ont pu &eacute;galement s&rsquo;extasier devant le spectacle.</p>','<p>NL&nbsp;Pr&eacute;sent en 2009 &agrave; Hasselt, le canard g&eacute;ant fait son retour dans les eaux d&rsquo;Hong Kong. Cr&eacute;&eacute; par un artiste n&eacute;erlandais, cette &laquo; petite &raquo; &oelig;uvre d&rsquo;art est connue sous le nom de Rubber Duck. L&rsquo;animal en plastique de Florentijn Hofman a donc gentiment barbot&eacute; le 2 mai dernier dans un port hongkongais, pendant que la foule &eacute;tait en admiration face &agrave; cette nostalgie de l&rsquo;enfance.<br /><br />Alors pourquoi ce canard gonflable ? Le cr&eacute;ateur Florentijn explique &laquo; Nous habitons sur une m&ecirc;me plan&egrave;te et les eaux de la Terre sont comme une m&ecirc;me baignoire. C&rsquo;est notre baignoire. Nous devons nous y baigner et nous devons nous assurer qu&rsquo;elle reste propre. Nous devons en prendre soin. &raquo; Une bonne mani&egrave;re de nous faire r&eacute;fl&eacute;chir, non ?<br /><br />Rubber Duck qui avoisine une hauteur comparable &agrave; un immeuble de six &eacute;tages n&rsquo;en est pas &agrave; sa premi&egrave;re sortie. Apr&egrave;s la Belgique, la France, les Pays-Bas et le Br&eacute;sil, les australiens ont pu &eacute;galement s&rsquo;extasier devant le spectacle.</p>','2013-05-16',1,'post','un-petit-canard-au-bord-de-l-eau','nl-un-petit-canard-au-bord-de-l-eau',NULL,12,'2013-05-16'),(106,'test','test nl','106/cover/1371493459.jpg','','<p>blabla ans</p>\r\n<p>&nbsp;</p>','','2013-06-17',1,'post','test','test-nl',NULL,1,'2013-06-17');
+/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `services`
+--
+
+DROP TABLE IF EXISTS `services`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `services` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `online` int(11) DEFAULT '1',
+  `created` date DEFAULT NULL,
+  `titre_fr` varchar(255) NOT NULL,
+  `titre_nl` varchar(255) NOT NULL,
+  `texte_fr` text NOT NULL,
+  `texte_nl` text NOT NULL,
+  `file` varchar(255) NOT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `services`
+--
+
+LOCK TABLES `services` WRITE;
+/*!40000 ALTER TABLE `services` DISABLE KEYS */;
+INSERT INTO `services` VALUES (2,1,'2013-03-24','Rédaction de Contenu','Rédactie van Content','<p>Vous avez toujours eu des difficult&eacute;s &agrave; poser des mots sur le message que vous souhaitez faire passer&nbsp;? Avec MicroWeb, vous n&rsquo;avez plus &agrave; vous en soucier&nbsp;: nous prenons en charge la r&eacute;daction du contenu de chaque page de votre site Internet. Notre plus-value&nbsp;? Le respect des r&egrave;gles de r&eacute;f&eacute;rencement (S.E.O.). Vous profitez ainsi d&rsquo;une visibilit&eacute; optimale sur la Toile.</p>','<p>NL&nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &nbsp;</p>','2_default_006.jpeg',NULL),(3,1,'2013-03-24','Gestion du contenu (CMS)','Content Management','<p>Tirez un trait sur les sites web rarement, voire jamais, mis &agrave; jour&nbsp;! Notre solution CMS adaptable en fonction des besoins de la client&egrave;le permet une gestion du site Internet autonome. Vous avez chang&eacute; de num&eacute;ro de t&eacute;l&eacute;phone ou d&rsquo;adresse e-mail&nbsp;? Modifiez ces informations en quelques clics seulement&nbsp;! Une gestion simple et rapide.</p>','<p>NL&nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &nbsp;</p>','3_default_007.jpeg',NULL),(4,1,'2013-03-24','Design Personnalisé','Custom Design','<p>Outre l&rsquo;h&eacute;bergement, le contenu et une mise &agrave; jour r&eacute;guli&egrave;re, la qualit&eacute; du design de votre site Internet est d&eacute;terminante. Rien de mieux qu&rsquo;un site attractif aux couleurs de votre entreprise&nbsp;! Notre priorit&eacute;&nbsp;? Respecter votre identit&eacute; visuelle. Nous vous proposons donc le choix entre 3 lay-out de sites diff&eacute;rents et adaptables. Et si vous souhaitez une interface encore plus personnalis&eacute;e, nous assurons la cr&eacute;ation d&rsquo;un code couleur non existant.</p>','<p>NL&nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &nbsp;</p>','4_default_004.jpeg',NULL),(5,1,'2013-03-24','Formation','Training','<p>Cerise sur le g&acirc;teau, MicroWeb offre &agrave; tout utilisateur une formation de 2&nbsp;h d&egrave;s la livraison du site. L&rsquo;objectif&nbsp;? Vous aider au mieux &agrave; g&eacute;rer votre site Internet de fa&ccedil;on professionnelle, sans emb&ucirc;ches. Et pour assurer la bonne continuit&eacute; de la gestion de votre site web, nous vous proposons &eacute;galement des formations de recyclage une fois par an les ann&eacute;es suivantes.</p>','<p>NL&nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &nbsp;</p>','5_default_003.jpeg',NULL),(1,1,'2013-05-17','URL / Hébergement','URL / Hosting','<p>Nous vous garantissons un h&eacute;bergement s&eacute;curis&eacute; et professionnel. Disposer d&rsquo;un site web de qualit&eacute;, c&rsquo;est bien. Mais s&rsquo;il est lent ou r&eacute;guli&egrave;rement inaccessible, l&rsquo;image de votre soci&eacute;t&eacute; en p&acirc;tira. Optez donc pour un h&eacute;bergement irr&eacute;prochable&nbsp;! Nos ma&icirc;tres mots&nbsp;? Rapidit&eacute;, haute disponibilit&eacute; et sur mesure. Nous vous proposons, en plus d&rsquo;une efficacit&eacute; maximale, un h&eacute;bergement adapt&eacute; &agrave; vos besoins.</p>','<p>NL&nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>','1_default_009.jpeg',NULL);
+/*!40000 ALTER TABLE `services` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sixes`
+--
+
+DROP TABLE IF EXISTS `sixes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sixes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titre_fr` varchar(255) NOT NULL,
+  `titre_nl` varchar(255) NOT NULL,
+  `texte_fr` varchar(255) NOT NULL,
+  `texte_nl` varchar(255) NOT NULL,
+  `link_fr` varchar(255) NOT NULL,
+  `link_nl` varchar(255) NOT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sixes`
+--
+
+LOCK TABLES `sixes` WRITE;
+/*!40000 ALTER TABLE `sixes` DISABLE KEYS */;
+INSERT INTO `sixes` VALUES (1,'URL / Hébergement ','URL / Hosting','<span> Nous garantissons un h&eacute;bergement pro, s&eacute;curis&eacute;,&nbsp; et tout &agrave; fait adapt&eacute; aux besoins du client</span>','<span><span id=\\\"result_box\\\" lang=\\\"nl\\\"><span class=\\\"hps\\\">Wij garanderen</span> <span class=\\\"hps\\\">accommodatie</span> <span class=\\\"hps\\\">pro</span><span>, veilig en</span> <span class=\\\"hps\\\">zeer geschikt voor</span> <span class=\\\"hps\\\">de behoeft','http://www.micro-web.be/fr/usines','http://www.micro-web.be/nl/factory','2013-04-30'),(2,'Rédaction de Contenu ','Content Redactie','<p>Nous r&eacute;digeons le contenu de votre projet au page-par-page dans le respect total des r&egrave;gles de r&eacute;f&eacute;rencement (S.E.O.*)&nbsp;</p>','<span id=\\\"result_box\\\" lang=\\\"nl\\\"><span class=\\\"hps\\\">We schrijven</span> <span class=\\\"hps\\\">de inhoud van</span> <span class=\\\"hps\\\">uw project</span> <span class=\\\"hps\\\">pagina</span> <span class=\\\"hps\\\">voor pagina</span> <span class=\\\"hps\\\">in voll','','',NULL),(3,'Gestion du Contenu ','Content Management','<p>Nous mettons en place un C.M.S adapte aux besoins du client, ce qui vous offre une totale autonomie dans la gestion de votre site Internet.</p>','<span id=\\\"result_box\\\" lang=\\\"nl\\\"><span class=\\\"hps\\\">We implementeren</span> <span class=\\\"hps\\\">van een CMS</span> <span class=\\\"hps\\\">aan te passen aan</span> <span class=\\\"hps\\\">de behoeften van klanten</span><span>,</span> <span class=\\\"hps\\\">zodat','','','2013-04-30'),(4,'Design Personnalisé ','Custom Design','En fonction de votre secteur d&rsquo;activites, nous designons une interface adaptee a votre concurence, l&rsquo;objectif d&rsquo;un beau site Internet est d&rsquo;ameliorer votre taux de conversion par l&rsquo;image professionelle que vous degagee','<span id=\\\"result_box\\\" lang=\\\"nl\\\"><span class=\\\"hps\\\">Afhankelijk van uw</span> <span class=\\\"hps\\\">gebied van business</span><span>, wijzen wij u</span> <span class=\\\"hps\\\">een interface</span> <span class=\\\"hps\\\">aangepast aan</span> <span class=\\\"hps','','',NULL),(5,'Formation','Opleiding','<p>Micro Web vous une formation de 2h par utilisateur d&egrave;s livraison du site, tout est fait pour que vous soyez le plus comfortable possible.</p>\r\n<p>&nbsp;</p>','<span id=\\\"result_box\\\" lang=\\\"nl\\\"><span class=\\\"hps\\\">Micro</span> <span class=\\\"hps\\\">Web kunt</span> <span class=\\\"hps\\\">2 uur per</span> <span class=\\\"hps\\\">gebruiker</span> <span class=\\\"hps\\\">trainen</span> <span class=\\\"hps\\\">bij levering</span> <','','',NULL),(6,'Service Clientèle','Klantendienst','<p>Notre equipe de specialistes vous est devouee en permanence, que ce soit pour un probleme de facturation ou simplement pour une question sur l&rsquo;utilisation de notre outil, vous pouvez compter sur nous 7 jours sur 7 de 10h a 20h.</p>','<span id=\\\"result_box\\\" lang=\\\"nl\\\"><span class=\\\"hps\\\">Ons team</span> <span class=\\\"hps\\\">van specialisten</span> <span class=\\\"hps\\\">gewijd aan</span> <span class=\\\"hps\\\">je voortdurend</span><span>,</span> <span class=\\\"hps\\\">of het nu een</span> &lt;','','','2013-04-30');
+/*!40000 ALTER TABLE `sixes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `slides`
+--
+
+DROP TABLE IF EXISTS `slides`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `slides` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `titre` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `online` int(11) DEFAULT NULL,
+  `file` varchar(255) NOT NULL,
+  `file_tmb` varchar(255) NOT NULL,
+  `linkedto` varchar(255) NOT NULL,
+  `linkedto_nl` varchar(255) NOT NULL,
+  `created` date DEFAULT NULL,
+  `caption` varchar(125) NOT NULL,
+  `caption_nl` varchar(125) NOT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `slides`
+--
+
+LOCK TABLES `slides` WRITE;
+/*!40000 ALTER TABLE `slides` DISABLE KEYS */;
+INSERT INTO `slides` VALUES (18,NULL,1,'18_1366147314_FullImage.jpg','tmb/18_1366147314.jpg','','','2012-10-10','Devis Gratuit','Gratis Devis','2013-04-16'),(34,NULL,1,'34_1366577135_FullImage.jpg','tmb/34_1366577135.jpg','','','2013-04-21','','','2013-04-21'),(37,NULL,-1,'','','','','2013-06-17','','',NULL);
+/*!40000 ALTER TABLE `slides` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `role` varchar(255) NOT NULL DEFAULT 'user',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'admin','d033e22ae348aeb5660fc2140aec35850c4da997','admin'),(3,'customer','b39f008e318efd2bb988d724a161b61c6909677f','user');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `valeurs`
+--
+
+DROP TABLE IF EXISTS `valeurs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `valeurs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `online` int(11) NOT NULL DEFAULT '1',
+  `created` date DEFAULT NULL,
+  `titre_fr` varchar(255) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
+  `titre_nl` varchar(255) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
+  `texte_fr` text CHARACTER SET latin1 COLLATE latin1_general_ci,
+  `texte_nl` text CHARACTER SET latin1 COLLATE latin1_general_ci,
+  `file` varchar(255) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `valeurs`
+--
+
+LOCK TABLES `valeurs` WRITE;
+/*!40000 ALTER TABLE `valeurs` DISABLE KEYS */;
+INSERT INTO `valeurs` VALUES (1,1,NULL,'Service all-in-one','NL Service all-in-one','<p>Vous nous avez communiqu&eacute; les informations relatives aux activit&eacute;s de votre entreprise&nbsp;? Votre travail s&rsquo;arr&ecirc;te l&agrave;. Nous prenons en charge la suite du projet dans son int&eacute;gralit&eacute;, de la maintenance au renouvellement du nom de domaine et de l&rsquo;h&eacute;bergement. Une solution cl&eacute; en main&nbsp;!</p>','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsa molestias iste quis a qui facilis esse aperiam nisi ducimus libero repellendus odio consequatur optio expedita cumque quas excepturi. Provident.</p>','1_dota_tiny_01.jpg','2013-05-23'),(2,1,'2013-03-24','Délai','NL Délai','<p>Recevez votre site Internet dans un d&eacute;lai de 7 jours ouvrables apr&egrave;s l&rsquo;&eacute;laboration du &nbsp;cahier des charges et l&rsquo;envoi de votre logo en fichier PSD. De quoi satisfaire les plus impatients d&rsquo;entre vous&nbsp;!</p>','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa dolorum sunt ad accusantium quidem repellendus dolorem natus consectetur tempora earum odit autem consequatur sit nulla optio inventore quisquam ducimus.</p>','2_dota_tiny_01.jpg','2013-05-23'),(3,1,'2013-03-24','Tarif ','NL Tarif','<p>La cr&eacute;ation d&rsquo;un site web engendre g&eacute;n&eacute;ralement des co&ucirc;ts importants. Vous venez de cr&eacute;er votre entreprise et vous n&rsquo;&ecirc;tes pas en mesure de consacrer un budget important &agrave; votre site Internet&nbsp;? MicroWeb vous propose des prix attractifs et comp&eacute;titifs &laquo;&nbsp;tout compris&nbsp;&raquo; pour un site web abordable. Vous recevez une facture annuelle&nbsp;: l&rsquo;id&eacute;al pour une comptabilisation simplifi&eacute;e.</p>','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quaerat repellendus fugit repellat culpa maxime ipsam consequuntur adipisci doloribus perferendis illo ullam. Aliquid magnam nam vero esse maiores perferendis molestiae!</p>','3_dota_tiny_01.jpg','2013-05-23'),(4,1,'2013-03-24','Accompagnement sur le long terme','NL Accompagnement sur le long terme','<p>Vous d&eacute;sirez modifier tel ou tel &eacute;l&eacute;ment publi&eacute; sur votre site web ? Aucun souci&nbsp;: contenu, design, mise &agrave; jour du CMS&hellip; Nous vous offrons chaque ann&eacute;e la possibilit&eacute; de modifier un aspect fonctionnel du site. Et pour ne rien g&acirc;cher, vous profitez d&rsquo;un service client&egrave;le disponible 7j/7. L&rsquo;id&eacute;al pour trouver une r&eacute;ponse rapide &agrave; vos questions.</p>','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quaerat repellendus fugit repellat culpa maxime ipsam consequuntur adipisci doloribus perferendis illo ullam. Aliquid magnam nam vero esse maiores perferendis molestiae!</p>','4_dota_tiny_01.jpg','2013-05-23');
+/*!40000 ALTER TABLE `valeurs` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2013-11-18 14:24:14

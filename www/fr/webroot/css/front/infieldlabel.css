@@ -1,0 +1,36 @@
+form, form fieldset input, form fieldset textarea, form label {
+	font-family: Helvetica, Arial;
+	font-size: 12pt;
+}
+form p { position: relative; }
+form p label { position: absolute; top: 7px; left: 0;}
+form p br {display: none;}
+
+
+form fieldset p input,
+form fieldset p textarea {
+	display: block;
+	padding: 4px;
+	margin: 0;
+}
+
+form fieldset p label {
+	width: auto;
+	display: block;
+	margin: 5px 5px 5px 6px;
+	padding: 0;
+}
+
+form fieldset p textarea {
+	padding: 2px;
+}
+
+form fieldset p textarea,
+form fieldset p input {
+	border: solid 1px #ccc;
+}
+form fieldset p label {
+	color: #777;
+	font-size: 14px;
+}
+

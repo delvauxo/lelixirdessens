@@ -1,0 +1,54 @@
+body {
+  background: #F1F1F1;
+  color: #333;
+  font-size: 11px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+p {
+  border: 1px solid #666;
+  padding: 10px 0;
+}
+
+.container_12,
+.container_16,
+.container_24 {
+  background-color: inherit;
+  background-repeat: repeat-y;
+  border-right: 0px solid #555556;
+  border-left: 0px solid #555556;
+}
+
+#container_12 {
+  background:url(../../img/layout/microweb/img/12_col.gif)
+}
+
+.container_16 {
+  background:url(../../img/layout/microweb/img/16_col.gif)
+}
+
+.container_24 {
+  background:url(../../img/layout/microweb/img/24_col.gif)
+}

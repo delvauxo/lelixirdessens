@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+color: #605676;
+text-decoration: none;
+}
+
+a:hover, 
+a:focus {
+text-decoration: none;
+o-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-webkit-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+color: #FFF;
+}
+
+a.scroll.active, a.scroll.active i {
+    color: #605676 !important;
+    border-top: 0px Solid #605676;
+    background: none;
+}
+
+.Menu-Header a.scroll.active:before {
+    border-top: 2px solid #605676;
+    width: 100%;
+}
+
+.activelink {
+border: 2px Solid #605676 !important;
+padding: 10px 30px;
+font-size: 17px;
+color: #FFF;
+border-radius: 3px;
+background: #605676 !important;
+text-align: center;
+font-family: 'Lato', sans-serif;
+}
+
+.Menu-Header ul li a:hover {
+color: #605676 !important;
+border-top: 0px Solid #605676;
+background: none;
+}
+
+.Menu-Header ul li a:before {
+border-top: 2px solid #605676;
+}
+
+.Menu-Header ul li a.current:before {
+width: 100%;
+content: "";
+color: #605676 !important;
+}
+
+.current{
+color: #605676 !important;
+}
+
+.navbar .dropdown-menu {
+border-top: 2px solid #605676 !important;
+}
+
+ul.dropdown-menu .col-md-4 h5 {
+color: #605676;
+}
+
+.Top-Block {
+background: #605676;
+border-right: 1px Solid #605676;
+}
+
+.Top-Block i {
+background: #605676;
+border: 5px Solid #605676;
+}
+
+.About-Block:hover .Top-Block i {
+background: #303030;
+border: 5px Solid #605676;
+}
+
+.Bottom-Block a:hover {
+color: #FFF;
+background: #605676;
+border: 1px SOlid #605676;
+}
+
+.title-section h3 {
+color: #605676;
+}
+
+h4.tap-title.active i {
+background: #605676;
+}
+
+h4.tap-title.active a {
+color: #605676;
+}
+
+.Contact-Team p span {
+color: #605676;
+}
+
+.Top-Testimonials i {
+border: 2px Solid #605676;
+}
+
+.Bottom-Testimonials h3 {
+color: #605676;
+}
+
+#owl-Testimonials .owl-page.active span {
+background: #605676 !important;
+}
+
+.block-Services:hover i {
+color: #605676;
+}
+
+.block-Services:hover h3 {
+color: #605676;
+}
+
+.block-Services:hover .line-break {
+border-bottom: 2px Solid #605676;
+}
+
+.SliderHomeVideoBck {
+background: rgba(96, 86, 118, 0.9);
+}
+
+.projectItem-hover {
+background: rgba(96, 86, 118, 0.9);
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+border: 3px SOlid #605676;
+}
+
+.btn-bck {
+background: #605676;
+border: 2px Solid #605676;
+}
+
+.btn-bck:hover {
+border: 2px Solid #605676;
+color: #605676;
+}
+
+a.btn-notback {
+border: 2px Solid #605676;
+color: #605676;
+}
+
+a.btn-notback:hover {
+background: #605676;
+border: 2px Solid #605676;
+}
+
+.color-wrapper {
+background-color: #605676;
+border: none;
+}
+
+.Features-Block h3 {
+color: #605676;
+}
+
+.Title-Us h3 {
+color: #605676;
+}
+
+.col-md-4:hover .Block-Sec h5 {
+color: #605676;
+}
+
+.col-md-4:hover .Block-Sec a {
+color: #605676 !important;
+}
+
+.col-md-4:hover .Block-Sec a:after {
+color: #605676;
+}
+
+#owl-Services-Slider .owl-page.active span {
+background: #605676 !important;
+}
+
+.block-News:hover .Top-img-news i {
+background: #605676;
+}
+
+.Post-f-title p span {
+color: #605676;
+}
+
+.Join-Footer .btnjoin {
+background: #605676;
+}
+
+.Top-Block-Sidebar h2 {
+color: #605676;
+}
+
+.main-bg input {
+background: #605676;
+color: #FFF;
+}
+
+.check-box a {
+color: #605676;
+}
+
+.Sign-Up p a {
+color: #605676;
+}
+
+.Bot-Block-Sidebar h2 {
+color: #605676;
+}
+
+.Join-Sidebar .btnjoin {
+background: #605676;
+}
+
+a.Slicefive:hover {
+background: #605676;
+border: 2px Solid #605676;
+}
+
+
+.progress-bar {
+background-color: #605676;
+height: 10px;
+}
+
+.Hover-Team {
+background: rgba(96, 86, 118, 0.9);
+}
+
+.active-link a {
+background: #605676 !important;
+}
+
+.Load-More a:hover {
+border: 2px Solid #605676;
+color: #FFF;
+background: #605676;
+}
+
+.block-Features i {
+background: #605676;
+}
+
+.one_fourth i {
+background: #605676;
+}
+
+.one_fourth span {
+color: #605676;
+}
+
+.wrapper-twitter {
+background: rgba(96, 86, 118, 0.7);
+}
+
+.Join-Newsletter .btnjoin {
+background: #605676;
+}
+
+.Join-Newsletter {
+border: 1px Solid #605676;
+}
+
+.tags a:hover {
+background: #605676;
+}
+
+.About-Block:hover .Style-Tow {
+margin-top: -20px;
+height: 150px !important;
+background: -webkit-linear-gradient(180deg, #605676 10%, #2986FC 90%);
+background: -moz-linear-gradient(180deg, #605676 10%, #2986FC 90%);
+background: -ms-linear-gradient(180deg, #605676 10%, #2986FC 90%);
+background: -o-linear-gradient(180deg, #605676 10%, #2986FC 90%);
+background: linear-gradient(180deg, #605676 10%, #2986FC 90%);
+}
+
+.About-Block:hover .Top-Block.Style-Tow i {
+border: 0px Solid #605676;
+}
+
+.About-Block:hover .Style-Tow i {
+background: none;
+border: none;
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+-moz-transition: -moz-transform 0.2s;
+-o-transition: transform 0.2s;
+-webkit-transition: -webkit-transform 0.2s;
+transition: transform 0.2s;
+}
+
+.dropdown-submenu>.dropdown-menu:not(.yamm-dropdown-menu) {
+border-top: 2px solid #605676 !important;
+}
+
+.Catogry-Pages p a {
+color: #605676;
+}
+
+.Top-Title-Page h3 {
+color: #605676;
+}
+
+.block-Services:hover .Box-Bg i {
+color: #605676;
+}
+
+.About-Me-Right i {
+background: #605676;
+}
+
+.Download-CV a {
+background: #605676;
+}
+
+.Pricing .plan:hover .Top-Plan {
+background: #605676;
+}
+
+.Pricing .plan:hover .select a {
+background: #605676;
+border: 2px Solid #605676;
+}
+
+.description-section a {
+color: #605676;
+}
+
+.description-section i {
+color: #605676;
+}
+
+.Pricing .plan:hover .Top-Plan-2 h4 {
+background: #605676;
+}
+
+.siteMap-nav ul ul li a {
+color: #777777;
+}
+
+.siteMap-nav ul ul li a:hover {
+color: #605676;
+}
+
+.time_circles > div > span {
+color: #605676;
+}
+
+.Top-Title-Blog h2 {
+color: #605676;
+}
+
+.Bottom-Title-Blog ul li p span {
+color: #605676;
+}
+
+.Comments-Post ul li h4 {
+color: #605676;
+}
+
+.Comments-Post ul li span a {
+color: #605676 !important;
+}
+
+.btn-large:hover {
+background: #605676;
+}
+
+.Headline-Text h1, .Headline-Text h2, .Headline-Text h3, .Headline-Text h4, .Headline-Text h5, .Headline-Text h6 {
+font-weight: 700;
+color: #605676;
+}
+
+blockquote p {
+color: #605676;
+}
+
+blockquote.blockquote-3 {
+background: #605676;
+}
+
+ul.list.prim li:before {
+color: #605676;
+}
+
+.Bullets ul li span {
+color: #605676;
+}
+
+.Block-Contact i {
+color: #605676;
+}
+
+.Block-Contact span {
+color: #605676;
+}
+
+.Block-Business i {
+background: #605676;
+}
+
+.portfolio-link i, .portfolio-zoom i, .portfolio-like i {
+color: #605676;
+}
+
+.Bottom-Twitter h2 a:hover {
+  color: #605676 !important;
+}
+
+.Post-f-title a h2:hover {
+  color: #605676;
+}
+
+#to-top {
+background-color: #605676;
+}
+
+.selected .Icons-Search a {
+  color: #605676;
+}

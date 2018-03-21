@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Brotherhood_Script';
+    src: url('../fonts/brotherhood_script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+  color:white;
+  font-family: sans-serif;
+  background: url('../img/background_photo.jpg') no-repeat center center fixed;
+  background-color: black;
+}
+
+a[href] {
+    color: white;
+}
+
+nav#main {
+    text-align: center;
+    font-size: x-large;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    padding-top: 30px;
+    top: 0;
+}
+
+nav#main li {
+    display: inline;
+    list-style: none;
+}
+
+nav#main li+li:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 29px;
+    background-image: url("../img/puce.png");
+    background-size: cover;
+    vertical-align: middle;
+    opacity: 0.2;
+}
+
+nav#main a[href] {
+    display:inline-block;
+    margin: 0 30px;
+}
+
+.menu-fix {
+    visibility: hidden;
+    margin-top: 90px;
+}
+
+h1 {
+    font-family: Brotherhood_Script, sans-serif;
+    font-size: 150px;
+    text-align: center;
+}
+
+main {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+ i.round
+ {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: none repeat scroll 0% 0% #FFF;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+
+
+/********* MENU PAGE ******/
+a.btn {
+    color:black;
+}
+
+.menu
+{
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+.menu li:first-child
+{
+  list-style: none;
+}
+.menu thead th
+{
+    padding-top:30px;
+    padding-bottom:20px;
+    font-size:large;
+}
+
+.menu tbody td
+{
+  padding-right: 15px;
+  vertical-align: top;
+}
+.menu tbody td:last-child {
+    text-align: right;
+}
+
+/****** Blog *******/
+.post .meta {
+  color: darkgray;
+  margin-top: -10px;
+   margin-bottom: 20px
+}
+.post.full-size header h2 {
+  /*border-bottom: 1px solid gray;*/
+  text-decoration: underline;
+}
+
+.news_list header h3::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 29px;
+    background-image: url("../img/puce.png");
+    background-size: cover;
+    vertical-align: middle;
+    opacity: 0.2;
+}
+.news_list .article_content,.news_list footer  {
+  margin-left: 40px;
+}
+.news_list footer {
+  margin-top: 10px;
+}
+.news_list footer a {
+  text-decoration: underline;
+}
+
+
+.pager li a,.pager li a:focus, .pager li a:hover  {
+  background-color: transparent;
+}
+.pager .disabled > a, .pager .disabled > a:focus, .pager .disabled > a:hover {
+  background-color: transparent;
+  color: #777;
+  border-color: #777;
+}
+
+.sep hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+article blockquote {
+    font-size: 14px;
+    color: gray;
+    background-color: rgba(30, 30, 30, 0.24);
+    border-radius: 15px 15px 15px;
+}
