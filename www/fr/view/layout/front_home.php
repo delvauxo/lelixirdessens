@@ -8,7 +8,7 @@
 
     <title><?php echo isset($title_for_layout)?$title_for_layout:'Restaurant Poivre et Sel'; ?></title> 
 
-    <meta name="description" content="<?php echo strip_tags(isset($description_for_layout))?$description_for_layout:"Un restaurant qui sent les produits frais du marché où la cuisine entièrement fait maison et "sur le moment" vous amènera à redécouvrir via une assiette soignée, l'Elixir de vos sens."; ?>">
+    <meta name="description" content="<?php echo strip_tags(isset($description_for_layout))?$description_for_layout:"Un restaurant qui sent les produits frais du marché où la cuisine entièrement fait maison et 'sur le moment' vous amènera à redécouvrir via une assiette soignée, l'Elixir de vos sens."; ?>">
 
 
 

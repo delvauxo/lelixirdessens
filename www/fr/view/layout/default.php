@@ -3,7 +3,7 @@
     <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
     <title><?php echo isset($title_for_layout)?$title_for_layout:'Micro-Web - Home'; ?></title> 
-    <meta name="description" content="<?php echo isset($description_for_layout)?$description_for_layout:"MicroWeb est une agence web spécialisée dans la création et la mise à disposition de sites internet destinés aux indépendants, startups et PME. Notre agence web prend en charge toutes les étapes du processus, la création de votre site web, la configuration de l'URL et l'hébergement, l'installation de notre CMS et son paramétrage enfin la rédaction de votre contenu et votre design a l'image de votre entreprise. Faites appel à notre équipe de spécialiste dès à présent."; ?>">
+    <meta name="description" content="<?php echo isset($description_for_layout)?$description_for_layout:"Restaurant L'Élixir Des Sens"; ?>">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
@@ -73,8 +73,9 @@
                      // array("link"=>"/fr/portfolio", "label"=>"Portfolio"),
                      // ======================================================
                      array("link"=>"/fr/propos", "label"=>"R&eacute;servatilon"),
-                     array("link"=>"/fr/contact", "label"=>"Vins"));
-                     array("link"=>"/fr/contact", "label"=>"Pour les Fêtes"));
+                     array("link"=>"/fr/contact", "label"=>"Vins"),
+                     array("link"=>"/fr/contact", "label"=>"Pour les Fêtes")
+                    );
                  $menu = '';
 
                  // Boucle de création de la liste <ul><li> de mon menu.
